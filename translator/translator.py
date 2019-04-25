@@ -13,6 +13,7 @@ def translateCtoE():
     }
     response = requests.post(url, data= data).json()
     r = response['data'][0]['dst']
+    print(response)
     t1.delete(0.0, 'end')
     t1.insert('end', r)
 
